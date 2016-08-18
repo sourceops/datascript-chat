@@ -1,13 +1,13 @@
-(ns datascript-chat
+(ns datascript-chat.core
   (:require
     [clojure.string :as str]
     [cljs.core.async :as async]
-    [datascript :as d]
+    [datascript.core :as d]
     [datascript-chat.server :as server]
     [datascript-chat.ui :as ui]
     [datascript-chat.util :as u])
   (:require-macros
-    [datascript-chat :refer [go-loop-sub]]
+    [datascript-chat.core :refer [go-loop-sub]]
     [cljs.core.async.macros :refer [go go-loop]]))
 
 (enable-console-print!)
